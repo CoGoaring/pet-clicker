@@ -1,5 +1,20 @@
+header {
+    margin: 0;
+    padding: 0;
+
+    height: 150px;
+
+    background-color: rgb(0, 170, 71);
+}
+
+main {
+    background-color: aquamarine;
+}
+
 * {
     margin: 1.0;
 
-    background-color: aquamarine;
+    background-color: brown;
+    
+    text-align: center;
 }

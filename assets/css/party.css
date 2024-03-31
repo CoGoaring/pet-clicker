@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 110px;
+
+    background-color: rgb(0, 170, 71);
+}
+
+.navigation a {
+    border:2px solid rgb(0, 77, 0);
+    background-color: rgb(0, 77, 0);
+    border-radius: 10px;
+    width:100px;
+    height:100px;
+    color: white;
+    box-shadow: 2px 3px 1px 0px black;
+}
+
+.navigation a:hover {
+    opacity: 0.5;
+}
+
+main {
+    background-color: aquamarine;
+
+    display: flex;
+    flex-direction: inline;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+footer {
+    background-color: aquamarine;
+}
+/*----------------------------------------------------------------------------------------------*/
+.party-main {
+    flex-direction: inline;
+}
+.partybox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inline;
+    margin: 50px 15vw 0px 0px;
+    min-width: 370px;
+    width: 40%;
+    border-radius: 25px;
+
+    border: 2px solid black;
+}
+
+.box {
+    width: 200px;
+    margin: 0 85px 100px 85px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: rgb(0, 132, 255);
+    box-shadow: 7px 10px 5px 0px black;
+    text-align: center;
+}
+
+.backpack {
+    position: fixed;
+    left: 0px;
+    bottom: 15vw;
+    width: 100px;
+    height: 400px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: rgb(0, 132, 255);
+    box-shadow: 0px 5px 10px 5px black;
+}
+
+.selector-menu {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 50px;
+
+    text-align: center;
+
+    background-color: rgb(0, 132, 255);
+    box-shadow: 7px 10px 5px 0px black;
+}
+
+/* A line :) */
+hr {
+    top: 150px;
+    position: relative;
+    border-top: 2px solid #ffffff;
+}

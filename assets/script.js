@@ -3,10 +3,13 @@
 
 const petID = [0,1,2,3,4,5,6,7,8,9,10];
 
-// I will need to create a pet object eventually, and have an a array of them like this.
-myPet = [];
+const pet = {
+    
+}
 
-number = 0;
+const myPet = [];
+
+let number=0;
 
 function ennumerate() {
         number++;
@@ -18,28 +21,30 @@ function ennumerate() {
             myPet.push(getRandomInt(petID.length+1))
             localStorage.setItem("myPet", JSON.stringify(myPet))
         }
-        // var petVal = JSON.parse(localStorage.getItem('myPet'));
-
-         console.log(myPet);
+        console.log(myPet);
          
 }
-var petVal = JSON.parse(localStorage.getItem('myPet'));
-
+let petVal = JSON.parse(localStorage.getItem('myPet'));
+myPet.push(petVal);
+// GLOBAL FUNCTIONS -----------------------------------------------------------------
 // Random number starting at 0 rounded to nearest whole float
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
+// GLOBAL FUNCTIONS -----------------------------------------------------------------
 
-// The update function itself only works when we are on the click page
+// UPDATE FOR CLICK PAGE -----------------------------------------------------------------
 if (document.URL.includes("click.html")) {
     // Calls our update id in the HTML and updates it every 10 milliseconds
-    var t = setInterval(function() {
+    let time = setInterval(function() {
         document.getElementById("update").innerHTML = number;
     }, 10);
-}
+} 
+
+// UPDATE FOR STABLES PAGE -----------------------------------------------------------------
 if (document.URL.includes("stables.html")) {
     // Calls our update id in the HTML and updates it every 10 milliseconds
-    var t = setInterval(function() {
+    let time = setInterval(function() {
         document.getElementById("updatePets").innerHTML = petVal;
     }, 10);
 }

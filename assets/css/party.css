@@ -43,6 +43,9 @@ footer {
     background-color: aquamarine;
 }
 /*----------------------------------------------------------------------------------------------*/
+.invis-block {
+    width: 250px;
+}
 .party-main {
     flex-direction: inline;
 }
@@ -54,8 +57,6 @@ footer {
     min-width: 370px;
     width: 40%;
     border-radius: 25px;
-
-    border: 2px solid black;
 }
 
 .box {

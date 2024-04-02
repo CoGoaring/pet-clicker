@@ -2,9 +2,15 @@
 //let db;
 
 const petID = [0,1,2,3,4,5,6,7,8,9,10];
-
+// your img for both egg and pokemon has to equal your id so there arent 10 million if statements
 const pet = {
-    
+    id: 0,
+    level: 0,
+    experience: 0,
+    stats: [0,0,0,0,0,0],
+    type: ["",""],
+    gender: "",
+
 }
 
 const myPet = [];
@@ -23,6 +29,11 @@ function ennumerate() {
         }
         console.log(myPet);
          
+}
+
+function reset() {
+    const reset = [];
+    localStorage.setItem("myPet", reset);
 }
 let petVal = JSON.parse(localStorage.getItem('myPet'));
 myPet.push(petVal);

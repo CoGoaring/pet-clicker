@@ -44,7 +44,37 @@ footer {
     background-color: aquamarine;
 }
 /*----------------------------------------------------------------------------------------------*/
-button {
-    width: 100px;
-    height: 100px;
+.incubator-container {
+    display: flex;
+    flex-direction: inline;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    border: 2px solid black;
+}
+
+.incubator {
+    background-image: url(../images/incubator2.png);
+    background-repeat: no-repeat;
+    background-size: 128px 128px;
+    width:128px;
+    height:128px;
+    margin-top: 50px;
+}
+
+.incubator p {
+    position:relative;
+    bottom: 25px;
+}
+
+.incubator img {
+    position:relative;
+    margin: 35px 0px 10px 0px;
+    left: 27.5px;
+}
+.incubator button {
+    position:relative;
+    width:50px;
+    height:20px;
+    top: 20px;
+    right: 34px;
 }

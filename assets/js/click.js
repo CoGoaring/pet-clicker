@@ -19,4 +19,4 @@ if (document.URL.includes(`click.html`)) {
     let time = setInterval(function() {
         document.getElementById(`update`).innerHTML = number;
     }, 10);
-} 
+} 7

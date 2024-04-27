@@ -10,25 +10,34 @@ const petID = [0,1,2,3,4,5];
 // constructor pog
 // okay so basically each id is both its image and its type if you think about it
 // normal :1, etc, shinies: s1, etc.
-class creature {
-    constructor (id, sprite, gender,  type, level, experience, stats, ev, iv,) {
+class Creature {
+    constructor (id, nickname, type) {
+    //Consistent values
     this.id = id;
-    this.sprite = sprite;
-    this.gender = gender;
     this.type = type;
-    this.level = level;
-    this.experience = experience;
-    this.stats = stats;
-    this.ev = ev;
-    this.iv = iv;
-    // most likely we will use states/enums here
-    }
 
+    //Changing values
+    this.nickname = nickname;
+    this.level;
+    this.experience;
+    
+    //Generated values
+    this.nature;
+    this.gender;
+    this.stats;
+    this.ev;
+    this.iv;
+    // this is still a maybe
+    // const States = {
+    //     EGG: `egg`,
+    //     STAGE1: `stage1`,
+    //     STAGE2: `stage2`,
+    //     STAGE3: `stage3`
+    // }
+    }
+    // getters :)
     getID() {
         return this.id;
-    };
-    getSprite() {
-        return this.sprite;
     };
     getGender() {
         return this.gender;
@@ -51,9 +60,33 @@ class creature {
     getIV() {
         return this.iv;
     };
+    // setters :)
+    setID(id) {
+        this.id = id;
+    };
+    setGender(gender) {
+        this.gender = gender;
+    };
+    setType(type) {
+        this.type = type;
+    };
+    setLevel(level) {
+        this.level = level;
+    };
+    setExperience(experience) {
+        this.experience = experience;
+    };
+    setStats(stats) {
+        this.stats = stats;
+    };
+    setEV(ev) {
+        this.ev = ev;
+    };
+    setIV(iv) {
+        this.iv = iv;
+    };
 }
-
-
+// module.exports = Creature;
 
 // GLOBAL FUNCTIONS -----------------------------------------------------------------
 // Random number starting at 0 rounded to nearest whole float
